@@ -8,13 +8,13 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <div class="aaa">
-    <img src="./eisenhower-matrix.jpg">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+<body class="page">
+  <div class="page-title">
+    <img class="page-logo" src="./eisenhower-matrix.jpg">
+    <a class="link-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
-  <div class="centered-main-page-element">
-    <p id="topSectionForAddingElementToList">
+  <div class="page-main">
+    <p class="task-add">
       <label for="new-task">Add Item</label>
       <div class="task-row-wrapper">
         <input id="new-task" class="task" type="text">
@@ -22,7 +22,7 @@
       </div>
     </p>
     <h3>Todo</h3>
-    <ul id="incompleteTasks">
+    <ul class="task-list">
       <li>
         <input type="checkbox">
         <label class="task">Pay Bills</label>
@@ -30,7 +30,7 @@
         <button class="edit">Edit</button>
         <button class="delete"><img src="./remove.svg"></button>
       </li>
-      <li class="editMode">
+      <li class="task-edit">
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task">
@@ -39,7 +39,7 @@
       </li>
     </ul>
     <h3>Completed</h3>
-    <ul id="completed-tasks">
+    <ul class="task-completed">
       <li>
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
@@ -49,6 +49,6 @@
       </li>
     </ul>
   </div>
-  <script type="text/javascript" SRC="app.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
